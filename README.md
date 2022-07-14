@@ -21,8 +21,9 @@
 ### Track_Hand.py
 	
 	This file is basically containing class named as handTracker(). The class handTracker() contain three functions (1. initialization function, 2. findAndDrawHands() function, 3. findLandmarks() function)
-	1. initialization function: This function used to initialize the mediapipe library function, which takes the parameters like how many hands you want to detect, how much accurate etc. The first parameter is static mode which is false because i want to detect hands if confidence level is suitable, if put ture it will always do the detection. 
+	1. initialization function: This function used to initialize the mediapipe library function, which takes the parameters like how many hands you 	want to detect, how much accurate etc. The first parameter is static mode which is false because i want to detect hands if confidence level is 		suitable, if put ture it will always do the detection. 
 	2. findAndDrawHands() function: This fucntion used to draw the 21 landmarks connected with line, as shown in image below.
-	![image](https://user-images.githubusercontent.com/109298390/179025242-11785c82-15e1-48ad-8f26-dbc2b079ea4d.png)
+	
+![image](https://user-images.githubusercontent.com/109298390/179025242-11785c82-15e1-48ad-8f26-dbc2b079ea4d.png)
 
 	
