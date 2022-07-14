@@ -11,7 +11,8 @@
 	  •	So I use the detector from Mediapipe library to detect the hands. 
 	  •	After detection the next part is classification, so for classification I use classifier from Tensor flow library. 
 	  •	So I need to write four scripts, the first one is for collecting the data of desire action of class. Whenever I 
-	  have a hand it supposed to detect it and crop the image and get multiple images of hand, that image will use for training ML algorithm. 
+	  have a hand it supposed to detect it and crop the image and get multiple images of hand, that image will use for training
+	  ML algorithm. 
 	  •	The second script is basically a class for detecting hand.
 	  •	The third script is for class of classifier from tensor flow.
 	  •	The fourth script also a class for detecting face mesh.
@@ -25,11 +26,26 @@
 	
 	- This file is basically containing class named as handTracker(). The class handTracker() contain three functions (1. 
 	initialization function, 2. findAndDrawHands() function, 3. findLandmarks() function)
-		1. initialization function: This function used to initialize the mediapipe library function, which takes the parameters
-		like how many hands you want to detect, how much accurate etc. The first parameter is static mode which is false because
-		i want to detect hands if confidence level is  suitable, if put ture it will always do the detection. 
-		2. findAndDrawHands() function: This fucntion used to draw the 21 landmarks connected with line, as shown in image below.
+		1. initialization function: This function used to initialize the mediapipe library function, which takes the 
+		parameters like how many hands you want to detect, how much accurate etc. The first parameter is static mode 
+		which is false because i want to detect hands if confidence level is  suitable, if put ture it will always do 
+		the detection. 
+		2. findAndDrawHands() function: This fucntion used to draw the 21 landmarks connected with line, as shown in 
+		image below.
 	
 ![image](https://user-images.githubusercontent.com/109298390/179025242-11785c82-15e1-48ad-8f26-dbc2b079ea4d.png)
+		
+		3. findLandmarks() function: This function return the landmarks id, x-axis, y-axis, and bounding box for hand.
 
-	
+### FaceMeash.py
+
+	- This file is basically containing class named as FaceMesh(). The class FaceMesh() contain three functions (1. 
+	initialization function, 2. drawFaceMesh() function, 3. meshLandmarks() function)
+		1. initialization function: This function used to initialize the mediapipe library function, which takes the 
+		parameters like how many face you want to detect, how much accurate etc. 
+		2. drawFaceMesh() function: This fucntion used to draw the 468 landmarks connected with line, as shown in 
+		image below.
+		
+![image](https://user-images.githubusercontent.com/109298390/179029128-f165bcdf-a68f-41d0-b6f2-57119ce62a38.png)
+
+		3. meshLandmarks() function: This function return the landmarks id, x-axis, y-axis, and bounding box for face.
